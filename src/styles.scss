@@ -1,0 +1,89 @@
+* {
+    font-family: BalsamiqSans, system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: BalsamiqSans;
+    src: url('/fonts/BalsamiqSans-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: BalsamiqSans;
+    src: url('/fonts/BalsamiqSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.body {
+    margin: 100px 0 0 0;
+}
+
+.prav {
+    background: green;
+    padding: 10px;
+}
+
+.error {
+    background: red;
+    padding: 10px;
+}
+
+.error_wrap {
+    width: 300px;
+    height: 300px;
+}
+.error_3 {
+    background: yellow;
+    width: 100%;
+    height: 100%;
+}
+.error_5 {
+    background: black;
+    width: 100%;
+    height: 100%;
+}
+
+.form {
+    color: red;
+    background-color: blue;
+}
+
+.form.important{
+    color: black;
+    background-color: grey;
+}
+
+
+
+
+.popup {
+    background: #de921f;
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #a5590b;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 10px 0;
+}
+
+.popup p {
+    text-align: center;
+    font-weight: 500; 
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #425e63;
+}
+
+.popup_inner {
+    background: red;
+    min-height: 100px;
+    margin: 10px 15px;
+}
