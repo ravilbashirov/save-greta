@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 @font-face {
     font-family: BalsamiqSans;
     src: url('/fonts/BalsamiqSans-Bold.ttf') format('truetype');
@@ -21,6 +20,93 @@
     font-display: swap;
 }
 
+.sky {
+    height: 250px;
+    background: #43d1ea;
+    position: relative;
+}
+
+.cost {
+    text-align: right;
+    margin-right: 15%;
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 25px;
+    color: #a5580b
+}
+
+.clouds img {
+    width: 30px;
+    position: absolute;
+    
+}
+
+.first_cloud {
+    top: 30%;
+    right: 15%;
+}
+
+.second_cloud {
+    top: 5%;
+    left: 20%;
+}
+
+.third_cloud {
+    bottom: 10%;
+    left: 35%;
+}
+
+.water {
+    height: 200px;
+    background: #0059c7;
+    position: relative;
+}
+
+.fishs img {
+    width: 60px;
+    position: absolute;
+}
+
+.first_fish {
+    top: 20%;
+    left: 10%;
+}
+
+.second_fish {
+    top: 40%;
+    right: 10%;
+}
+
+.third_fish {
+    bottom: 5%;
+    right: 49%;
+}
+
+.earth {
+    height: 500px;
+    background: #078617;
+    position: relative;
+}
+
+.flowers img {
+    width: 90px;
+    position: absolute;
+}
+
+.first_flower {
+    top: 15%;
+    left: 7%;
+}
+
+.second_flower {
+    top: 20%;
+    right: 10%;
+}
+
+.third_flower {
+    bottom: 5%;
+    right: 30%;
+}
 
 .body {
     margin: 100px 0 0 0;

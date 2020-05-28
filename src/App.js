@@ -29,17 +29,42 @@ const App = () => {
         setData(newData)
     }
     return(
-        <div className="container">
-            <div class="name">
-                <input value={text} onChange={onChangeInput}></input>
-                <button onClick={onClick1}>Введи ник и нажми</button>
-            </div>
-            <div className="list">
-                {data.map((el, i )=> (<div>{el} <button i={i} onClick={onClick2}>Удалить</button></div>))}
-            </div>
-            <Game />
-            <NewReg />
+        <div class="container">
             <PopUp />
+            <div class="sky">
+                <div class="cost">
+                    333
+                </div>
+                <div class="clouds">
+                    <img src="svg/cloud.svg" alt="cloud" class="first_cloud"></img>
+                    <img src="svg/cloud.svg" alt="cloud" class="second_cloud"></img>
+                    <img src="svg/cloud.svg" alt="cloud" class="third_cloud"></img>
+                </div>  
+            </div>
+            <div class="earth">
+                {/* <div class="name">
+                    <input value={text} onChange={onChangeInput}></input>
+                    <button onClick={onClick1}>Введи ник и нажми</button>
+                </div>
+                <div className="list">
+                    {data.map((el, i )=> (<div>{el} <button i={i} onClick={onClick2}>Удалить</button></div>))}
+                </div>
+                <Game />
+                <NewReg />
+                 */}
+                <div class="flowers">
+                    <img src="svg/flower.svg" alt="flower" class="first_flower"></img>
+                    <img src="svg/flower.svg" alt="flower" class="second_flower"></img>
+                    <img src="svg/flower.svg" alt="flower" class="third_flower"></img>
+                </div>
+            </div>
+            <div class="water">
+                <div class="fishs">
+                    <img src="svg/fish.svg" alt="fish" class="first_fish"></img>
+                    <img src="svg/fish.svg" alt="fish" class="second_fish"></img>
+                    <img src="svg/fish.svg" alt="fish" class="third_fish"></img>
+                </div>
+            </div>  
         </div>
     )
 }
