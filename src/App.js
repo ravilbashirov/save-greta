@@ -13,6 +13,8 @@ const App = () => {
     const [text, setText] = useState('')
     const [data, setData] = useState([])
 
+    const [isOpenPopUp, setIsOpenPopUp] = useState (true)
+
     function onChangeInput(event) {
         setText(event.target.value)
     }
@@ -30,7 +32,14 @@ const App = () => {
     }
     return(
         <div class="container">
-            <PopUp />
+
+            {isOpenPopUp && 
+                <>
+                <div class="overlay" ></div>
+                <PopUp setIsOpenPopUp={setIsOpenPopUp}/>
+                </>
+            }
+            
             <div class="sky">
                 <div class="cost">
                     333

@@ -1,14 +1,16 @@
 import React from 'react'
 
-export const PopUp = () => {
+export const PopUp = ({setIsOpenPopUp}) => {
     const onClickBtn = () => {
-        console.log("Click")
+        setIsOpenPopUp(false);
     }
     return (
-        <div class="popup">
-            <p>Title</p>
-            <div class="popup_inner"></div>
-            <button onClick={onClickBtn}>Начать игру</button>
+        <div class="popup_wrap">
+            <div class="popup">
+                <p>Title</p>
+                <div class="popup_inner"></div>
+                <button onClick={onClickBtn}>Начать игру</button>
+            </div>
         </div>
     )
 }
