@@ -26,6 +26,10 @@
     position: relative;
 }
 
+.sky.fail {
+    background: #3a5054;
+}
+
 .cost {
     text-align: right;
     margin-right: 15%;
@@ -62,6 +66,12 @@
     position: relative;
 }
 
+.water.fail {
+    height: 200px;
+    background: #0f8458;
+    position: relative;
+}
+
 .fishs img {
     width: 60px;
     position: absolute;
@@ -86,6 +96,10 @@
     height: 500px;
     background: #078617;
     position: relative;
+}
+
+.earth.fail {
+    background: #afab35;
 }
 
 .flowers img {

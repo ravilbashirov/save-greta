@@ -40,17 +40,22 @@ const App = () => {
                 </>
             }
             
-            <div class="sky">
+            <div class="sky fail">
                 <div class="cost">
                     333
                 </div>
-                <div class="clouds">
+                {/* <div class="clouds">
                     <img src="svg/cloud.svg" alt="cloud" class="first_cloud"></img>
                     <img src="svg/cloud.svg" alt="cloud" class="second_cloud"></img>
                     <img src="svg/cloud.svg" alt="cloud" class="third_cloud"></img>
+                </div>   */}
+                <div class="clouds">
+                    <img src="svg/cloud_fail.svg" alt="cloud" class="first_cloud"></img>
+                    <img src="svg/cloud_fail.svg" alt="cloud" class="second_cloud"></img>
+                    <img src="svg/cloud_fail.svg" alt="cloud" class="third_cloud"></img>
                 </div>  
             </div>
-            <div class="earth">
+            <div class="earth fail">
                 {/* <div class="name">
                     <input value={text} onChange={onChangeInput}></input>
                     <button onClick={onClick1}>Введи ник и нажми</button>
@@ -61,17 +66,27 @@ const App = () => {
                 <Game />
                 <NewReg />
                  */}
-                <div class="flowers">
+                {/* <div class="flowers">
                     <img src="svg/flower.svg" alt="flower" class="first_flower"></img>
                     <img src="svg/flower.svg" alt="flower" class="second_flower"></img>
                     <img src="svg/flower.svg" alt="flower" class="third_flower"></img>
+                </div> */}
+                <div class="flowers">
+                    <img src="svg/flower_fail.svg" alt="flower" class="first_flower"></img>
+                    <img src="svg/flower_fail.svg" alt="flower" class="second_flower"></img>
+                    <img src="svg/flower_fail.svg" alt="flower" class="third_flower"></img>
                 </div>
             </div>
-            <div class="water">
-                <div class="fishs">
+            <div class="water fail">
+                {/* <div class="fishs">
                     <img src="svg/fish.svg" alt="fish" class="first_fish"></img>
                     <img src="svg/fish.svg" alt="fish" class="second_fish"></img>
                     <img src="svg/fish.svg" alt="fish" class="third_fish"></img>
+                </div> */}
+                <div class="fishs">
+                    <img src="svg/fish_fail.svg" alt="fish" class="first_fish"></img>
+                    <img src="svg/fish_fail.svg" alt="fish" class="second_fish"></img>
+                    <img src="svg/fish_fail.svg" alt="fish" class="third_fish"></img>
                 </div>
             </div>  
         </div>
