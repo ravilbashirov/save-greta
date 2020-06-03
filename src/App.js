@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
-import { Game } from './game'
-import { NewReg} from './new-add'
+// import { Game } from './game'
+// import { NewReg} from './new-add'
 
 
 import { PopUp } from './components/popUp'
@@ -10,25 +10,48 @@ import  './styles.scss'
 
 
 const App = () => {
-    const [text, setText] = useState('')
-    const [data, setData] = useState([])
+
+    // const [data, setData] = useState([])
 
     const [isOpenPopUp, setIsOpenPopUp] = useState (true)
 
-    function onChangeInput(event) {
-        setText(event.target.value)
-    }
-    function onClick1 (){
-        setData([...data, text])
-    }
-    function onClick2 (eventClick){
-        let index = Number(eventClick.target.getAttribute('i'))
-        let newData = data.filter((ddd, indexArray) => {
-            if(indexArray === index) {
-                return false
-            } else return true
-        })
-        setData(newData)
+    // function onChangeInput(event) {
+    //     setText(event.target.value)
+    // }
+    // function onClick1 (){
+    //     setData([...data, text])
+    // }
+    // function onClick2 (eventClick){
+    //     let index = Number(eventClick.target.getAttribute('i'))
+    //     let newData = data.filter((ddd, indexArray) => {
+    //         if(indexArray === index) {
+    //             return false
+    //         } else return true
+    //     })
+    //     setData(newData)
+    // }
+  
+
+    const FormInnerPopUp = () => {
+        const [text, setText] = useState('')
+        function onChangeInput(event) {
+            setText(event.target.value)
+        }
+        function onClickFormBtn (event) {
+            event.preventDefault()
+            console.log(text)
+        }
+        
+        return (
+        <div class="inner_popup">
+            <form>
+                <input 					
+					value={text} onChange={onChangeInput}
+					type="text"/>
+                <button onClick={onClickFormBtn}>войти</button>
+            </form>
+        </div>)
+        
     }
     return(
         <div class="container">
@@ -36,7 +59,7 @@ const App = () => {
             {isOpenPopUp && 
                 <>
                 <div class="overlay" ></div>
-                <PopUp setIsOpenPopUp={setIsOpenPopUp}/>
+                <PopUp setIsOpenPopUp={setIsOpenPopUp} inner={<FormInnerPopUp/>}/>
                 </>
             }
             

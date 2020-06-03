@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const PopUp = ({setIsOpenPopUp}) => {
+export const PopUp = ({setIsOpenPopUp, inner}) => {
     const onClickBtn = () => {
         setIsOpenPopUp(false);
     }
@@ -8,7 +8,7 @@ export const PopUp = ({setIsOpenPopUp}) => {
         <div class="popup_wrap">
             <div class="popup">
                 <p>Title</p>
-                <div class="popup_inner"></div>
+                <div class="popup_inner">{inner}</div>
                 <button onClick={onClickBtn}>Начать игру</button>
             </div>
         </div>
