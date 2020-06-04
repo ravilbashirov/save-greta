@@ -14,6 +14,7 @@ const App = () => {
     // const [data, setData] = useState([])
 
     const [isOpenPopUp, setIsOpenPopUp] = useState (true)
+    const [isDisabled, setIsDisabled] = useState (true)
 
     // function onChangeInput(event) {
     //     setText(event.target.value)
@@ -38,6 +39,7 @@ const App = () => {
             setText(event.target.value)
         }
         function onClickFormBtn (event) {
+            setIsDisabled(false)
             event.preventDefault()
             console.log(text)
         }
@@ -53,13 +55,14 @@ const App = () => {
         </div>)
         
     }
+    
     return(
         <div class="container">
 
             {isOpenPopUp && 
                 <>
                 <div class="overlay" ></div>
-                <PopUp setIsOpenPopUp={setIsOpenPopUp} inner={<FormInnerPopUp/>}/>
+                <PopUp setIsOpenPopUp={setIsOpenPopUp} title={'Save Greta'} inner={<FormInnerPopUp />} isDisabled={isDisabled} />
                 </>
             }
             

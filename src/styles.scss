@@ -212,7 +212,6 @@ button:active {
 }
 
 .popup_inner {
-    background: red;
     min-height: 100px;
     margin: 10px 15px;
 }
@@ -229,4 +228,21 @@ button:active {
 	z-index: 1;
 	overflow-x: hidden;
 	overflow-y: auto;
+}
+
+form {
+    display: flex;
+}
+
+input {
+    height: 31px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.btn_disabled {
+    pointer-events: none;
+    opacity: 0.3;
+    background: black;
+    cursor: default;
 }
