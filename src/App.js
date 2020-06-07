@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 
 
 import { PopUp } from './components/popUp'
+import { ItemGeneration } from './components/item-generation'
 
 import  './styles.scss'
 
@@ -32,6 +33,7 @@ const App = () => {
     //     setData(newData)
     // }
   
+ 
 
     const FormInnerPopUp = () => {
         const [text, setText] = useState('')
@@ -59,12 +61,15 @@ const App = () => {
     return(
         <div class="container">
 
+            <ItemGeneration />
+
             {isOpenPopUp && 
                 <>
                 <div class="overlay" ></div>
                 <PopUp setIsOpenPopUp={setIsOpenPopUp} title={'Save Greta'} inner={<FormInnerPopUp />} isDisabled={isDisabled} />
                 </>
             }
+            
             
             <div class="sky fail">
                 <div class="cost">
