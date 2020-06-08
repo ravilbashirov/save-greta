@@ -246,3 +246,18 @@ input {
     background: black;
     cursor: default;
 }
+
+.container {
+    position: relative;
+}
+
+.item {
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 100px);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+}
