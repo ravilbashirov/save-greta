@@ -109,6 +109,20 @@ const App = () => {
                 </div>
             </div>
             <div class="water fail">
+                <div class="buttons">
+                    <div class="button_paper">
+                     <p>G</p>
+                     <img src="svg/keyboardG.svg" alt="keyboard"></img>
+                    </div>
+                    <div class="button_metall">
+                        <p>H</p>
+                        <img src="svg/keyboardH.svg" alt="keyboard"></img>
+                    </div>
+                    <div class="button_regular">
+                        <p>F</p>
+                        <img src="svg/keypadF.svg" alt="keyboard"></img>
+                    </div>
+                </div>
                 {/* <div class="fishs">
                     <img src="svg/fish.svg" alt="fish" class="first_fish"></img>
                     <img src="svg/fish.svg" alt="fish" class="second_fish"></img>
