@@ -254,7 +254,7 @@ input {
 .item {
     position: absolute;
     z-index: 1;
-    left: calc(50% - 100px);
+    left: calc(50% - 50px);
 }
 
 .item img {
@@ -278,4 +278,16 @@ input {
 
 .buttons p {
     margin-bottom: 7px;
+}
+
+.bucket {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    left: calc(50% - 100px);
+}
+
+.bucket img {
+    width: 200px;
+    height: 180px;
 }

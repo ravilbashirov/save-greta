@@ -6,7 +6,8 @@ import React, { useState } from 'react'
 
 import { PopUp } from './components/popUp'
 import { ItemGeneration } from './components/item-generation'
-
+import { BucketGeneration } from './components/bucket-generation'
+ 
 import  './styles.scss'
 
 
@@ -16,6 +17,13 @@ const App = () => {
 
     const [isOpenPopUp, setIsOpenPopUp] = useState (true)
     const [isDisabled, setIsDisabled] = useState (true)
+
+
+    let handleKeyPress = (event) => {
+        if(event.key === 'b'){
+          console.log('enter press here! ')
+        }
+      }
 
     // function onChangeInput(event) {
     //     setText(event.target.value)
@@ -59,9 +67,11 @@ const App = () => {
     }
     
     return(
-        <div class="container">
+        <div class="container" tabIndex="0" onKeyPress={handleKeyPress}>
 
             <ItemGeneration />
+            
+            <BucketGeneration />
 
             {isOpenPopUp && 
                 <>
